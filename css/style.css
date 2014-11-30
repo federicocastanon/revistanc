@@ -1,0 +1,281 @@
+/*CAMBIAR EN CADA IMPLEMENTACION*/
+/*
+
+ * ejemplar 1 57BAD9
+ * ejemplar 2 F7B32C
+ * ejemplar 3 7DB52C
+ * ejemplar 4 C7A2CB
+ *
+ * */
+#headear, .destacadoHome, .linkActivo, #bajada, #imagenDestacado, .linkHome, .seleccionado {
+	background-color: #C8A3CC;
+}
+#ejemplarActual h2, #ejemplarDestacado h1, .tituloSeccion, .accesoRecomendado h1, .tituloFranjaIzquierda {
+	color: #C8A3CC;
+}
+#ejemplarActual h1 {
+	border-bottom: #C8A3CC solid 2px;
+}
+#franjaDerecha, #franjaIzquierda {
+	border-top: #C8A3CC solid 2px;
+}
+/*CAMBIAR EN CADA IMPLEMENTACION*/
+
+* {
+	margin: 0;
+}
+
+html, body {
+	min-height: 100%;
+	background-color: #FFFFFF;
+}
+
+#headear {
+	min-height: 95px;
+	width: 80%;
+	margin-left: 10%;
+	float: left;
+}
+#logoNC {
+	min-height: 70px;
+	width: 354px;
+	background: url(img/logoRNC.png) no-repeat;
+	float: left;
+	cursor: pointer;
+}
+#logoVerticalNC {
+	height: 200px;
+	min-width: 185px;
+	margin: 10px 0px 10px 40%;
+	cursor: pointer;
+	background: url(img/rncLogoVertical.png) no-repeat;
+}
+#logosAfidiItineris {
+	background: url(img/logoAfidiItineris.png) no-repeat;
+	height: 70px;
+	width: 170px;
+	float: right;
+}
+#navigation {
+	padding: 5px 0 20px 0;
+	background-color: #FFFFFF;
+	min-height: 22px;
+	float: right;
+	width: 100%;
+}
+.linkNavegacion {
+	width: 15%;
+	float: left;
+	min-width: 174px;
+	margin: 1px 4px 2px 4px;
+	padding: 10px 0 10px 0;
+	cursor: pointer;
+	font-family: "Oswald";
+	font-weight: 300;
+}
+.largo {
+	width: 25% !important;
+}
+.linkNavegacion a {
+	text-align: center;
+	display: block;
+	width: 100%;
+	text-decoration: none;
+	color: #000000;
+	cursor: pointer;
+}
+.linkNavegacion a:visited, .linkNavegacion a:active, .linkNavegacion a:focus {
+	text-decoration: none;
+	color: #000000;
+}
+
+#cuerpo {
+	min-height: 375px;
+	width: 80%;
+	margin-left: 10%;
+	background-color: #FFFFFF;
+	float: left;
+}
+#franjaIzquierda, #franjaIzquierdaHome {
+	width: 60%;
+	float: left;
+}
+
+#destacado {
+	width: 70%;
+	height: 100%;
+}
+#imagenDestacado {
+	background: url(img/f4.jpg) no-repeat;
+	opacity: 0.5;
+	background-size: cover;
+	min-height: 355px;
+	height: 66%;
+	min-width: 675px;
+	width: 100%;
+	float: left;
+	cursor: pointer;
+}
+
+#bajada {
+	width: 50%;
+	height: 100%;
+	min-height: 355px;
+	float: right;
+	opacity: 0.8;
+	padding: 0px 5px 0px 10px;
+	color: #FFFFFF;
+	cursor: pointer;
+}
+#bajada h1, .tituloFranjaIzquierda {
+	font-size: 60px;
+	font-family: "Oswald";
+	font-weight: 700;
+	padding: 5px 10px 10px 5px;
+	margin: 0px;
+}
+#bajada p {12px;
+	padding: 0px 10px 0px 5px;
+	font-size: 10px;
+	font-family: "Signika";
+}
+
+#ejemplarActual, #franjaDerecha {
+	width: 30%;
+	height: 100%;
+	min-height: 355px;
+	float: right;
+	cursor: pointer;
+	margin: 0px 0px 0px 40px;
+}
+#ejemplarActual h1 {
+	font-size: 16px;
+	font-family: "Oswald";
+	font-weight: 300;
+}
+#ejemplarActual h2 {
+	font-size: 160px;
+	margin: 0px;
+	font-family: "Oswald";
+	font-weight: 700;
+}
+
+.itemIndice {
+	font-size: 10px;
+	font-family: "Signika";
+	padding: 10px 0 5px 0;
+}
+#wrapperLinkHome {
+	padding: 30px 5px 3px 0px;
+	width: 100%;
+	min-height: 110px;
+	float: left;
+}
+.linkHome {
+	color: #FFFFFF;
+	min-height: 100px;
+	font-family: "Oswald";
+	font-weight: 700;
+	font-size: 50px;
+	margin-right: 40px;
+	cursor: pointer;
+}
+.anunciar {
+	width: 260px;
+	float: left;
+}
+.publicar {
+	width: 260px;
+	float: right;
+}
+
+#ejemplarDestacado {
+	width: 100%;
+	padding: 30px 0px 5px 5px;
+}
+#ejemplarDestacado h1 {
+	font-size: 36px;
+	margin: 0px;
+	font-family: "Oswald";
+	font-weight: 700;
+}
+#imgEjemplarActual {
+	width: 35%;
+	float: left;
+	padding: 15px 15px 10px 5px;
+}
+.parrafoDestacado {
+	font-size: 14px;
+	margin: 0px;
+	font-family: "Oswald";
+	font-weight: 700;
+	padding: 10px 0px 20px 0px;
+}
+.textoGeneral {
+	font-size: 10px;
+	font-family: "Signika";
+}
+
+#wrapperEjemplaresAnteriores {
+	display: block;
+	height: auto;
+}
+
+.ejemplarAnterior {
+	width: 45%;
+	padding: 20px 2.5% 20px 2.5%;
+	float: left;
+}
+.ejemplarAnterior img {
+	width: 80%;
+	margin-left: 10%;
+}
+.ejemplarAnterior p {
+	padding-top: 5px;
+	font-size: 10px;
+	font-family: "Signika";
+}
+.accesoRecomendado {
+	width: 100%;
+	margin: }
+	.accesoRecomendado h1{
+	font-size: 36px;
+	margin: 0px;
+	font-family: "Oswald";
+	font-weight: 700;
+}
+
+.accesoRecomendado p {
+	font-size: 10px;
+	font-family: "Signika";
+	padding: 10px 0 5px 0;
+}
+
+#footer {
+	height: 75px;
+	background-color: #FFFFFF;
+	position: relative;
+	bottom: 0px;
+	left: 0px;
+	width: 60%;
+	float: left;
+}
+#datos {
+
+}
+#copyright {
+	float: left;
+	text-align: left;
+	margin-left: 30px;
+	position: absolute;
+	bottom: 0px;
+}
+#copyright1987 {
+	float: right;
+	text-align: right;
+	margin-right: 30px;
+	position: absolute;
+	bottom: 0px;
+	right: 20px;
+}
+
