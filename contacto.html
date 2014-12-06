@@ -1,26 +1,105 @@
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
 	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<title>Revista Nuestros Contenidos</title>
+		<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Signika' rel='stylesheet' type='text/css'>
+		<link rel="shortcut icon" href="css/img/favicon.ico" />
+		<link rel="icon" type="image/ico" href="css/img/favicon.ico" />
 		<link rel="stylesheet" type="text/css" media="screen" href="css/style.css"/>
+		<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
 	</head>
 	<body>
 
 		<div id="headear">
-		<div id="logoNC"></div>
-		<div id="logosAfidiItineris"></div>
-		<div id="navigation">
-			<div id="secciones" class="linkNavegacion" rel="secciones">Estructura y Secciones</div>
-			<div id="ejemplares" class="linkNavegacion" rel="ejem">Ejemplares</div>
-			<div id="publicar" class="linkNavegacion" rel="publ">Publicar</div>
-			<div id="suscripcion" class="linkNavegacion" rel="susc">Suscripción</div>
-			<div id="contacto" class="linkNavegacion" rel="cont">Contacto</div>
+			<div id="logoNC"></div>
+			<div id="logoAfidi"></div>
+			<div id="logoItineris"></div>
+			<div id="navigation">
+				<div id="secciones" class="linkNavegacion largo"  >
+					<a href="secciones.html">ESTRUCTURA Y SECCIONES</a>
+				</div>
+				<div id="ejemplares" class="linkNavegacion" >
+					<a href="ejemplares.html">EJEMPLARES</a>
+				</div>
+				<div id="publicar" class="linkNavegacion">
+					<a href="publicar.html">PUBLICAR</a>
+				</div>
+				<div id="suscripcion" class="linkNavegacion">
+					<a href="suscripcion.html">SUSCRIPCIÓN</a>
+				</div>
+				<div id="contacto" class="linkNavegacion seleccionado" >
+					<a href="contacto.html">CONTACTO</a>
+				</div>
+			</div>
 		</div>
+		<div id="cuerpo">
+			<div id="franjaIzquierda">
+				<h1 class="tituloFranjaIzquierda">CONTACTO:</h1>
+				<form class="formContacto" name="formu" id="formu" method="post" >
+					<div id="camposWrapper">
+						<div class="campoFormulario">
+							<label for="nombre" class="requerido">Nombre y Apellido</label>
+							<input id="nombre" type="text" tabindex="31">
+						</div>
+						<div class="campoFormulario">
+							<label for="organizacion">Organización</label>
+							<input id="organizacion" type="text" tabindex="32">
+						</div>
+						<div class="campoFormulario">
+							<label for="telefono">Teléfono</label>
+							<input id="telefono" type="text" tabindex="33">
+						</div>
+						<div class="campoFormulario">
+							<label for="mail" class="requerido">Correo electrónico</label>
+							<input id="mail" type="email" tabindex="34">
+						</div>
+						<div class="campoFormulario ">
+							<label for="consulta" class="requerido">Mensaje</label>
+							<textarea id="consulta" class="campoFormTextArea" name="consulta" cols="50" rows="3" tabindex="35" ></textarea>
+						</div>
+					</div>
+					<div class="aclaracion">
+						<span class="requerido">Los campos con </span><span> son datos imprescindibles para poder responderte</span>
+					</div>
+					<div class="botones">
+						<input type="button" value="Enviar" id="manda" name="manda" onclick="javascript:mandarMail();" class="btnEnviar" tabindex="36">
+						&nbsp;
+						<input type="reset" value="Borrar todo" class="btnEliminar" tabindex="37">
+					</div>
+				</form>
+			</div>
+			<div id="franjaDerecha">
+				<div class="accesoRecomendado">
+					<h1>PUBLICAR UN ARTICULO EN RNC</h1>
+					<p>
+						Siguiendo la política editorial, detallamos los requerimientos necesarios para que una propuesta sea aceptable para el comité de redacción, paso previo a la revisión anónima que culmina el proceso de aceptación
+					</p>
+				</div>
+				<div class="accesoRecomendado">
+					<h1>PARTICIPAR COMO ANUNCIANTE EN RNC</h1>
+					<p>
+						Enterese cuáles son los espacios disponibles y las posibilidades de anunciar en la revista
+					</p>
+				</div>
+				<div class="accesoRecomendado">
+					<h1>SUSCRIBIRSE A RNC DIGITAL O IMPRESA</h1>
+					<p>
+						Si desea recibir los ejemplares de la revista en su domicilio ahora puede solicitarlos individualmente o todos juntos en 3 simples pasos sin moverse de su casa
+					</p>
+				</div>
+			</div>
+
 		</div>
-		<div id="cuerpo"></div> 
-		<div id="footer">			
-			<p id="copyright">&copy; 1987 Graphic & Web Design</p>
+		<div id="footer">
+			<p id="copyright">
+				&copy; Revista NC 2014
+			</p>
+			<p id="copyright1987">
+				&copy; 1987 Graphic &amp; Web Design
+			</p>
 		</div>
-		
 	</body>
-	
+
 </html>

@@ -10,14 +10,14 @@
 #headear, .destacadoHome, .linkActivo, #bajada, #imagenDestacado, .linkHome, .seleccionado {
 	background-color: #C8A3CC;
 }
-#ejemplarActual h2, #ejemplarDestacado h1, .tituloSeccion, .accesoRecomendado h1, .tituloFranjaIzquierda {
+#ejemplarActual h2, #ejemplarDestacado h1, .tituloSeccion, .accesoRecomendado h1, .tituloFranjaIzquierda,#accordion h3 {
 	color: #C8A3CC;
 }
 #ejemplarActual h1 {
 	border-bottom: #C8A3CC solid 2px;
 }
 #franjaDerecha, #franjaIzquierda {
-	border-top: #C8A3CC solid 2px;
+	border-top: #C8A3CC solid 3px;
 }
 /*CAMBIAR EN CADA IMPLEMENTACION*/
 
@@ -37,9 +37,11 @@ html, body {
 	float: left;
 }
 #logoNC {
-	min-height: 70px;
+	height: 50px;
+	margin: 10px;
 	width: 354px;
-	background: url(img/logoRNC.png) no-repeat;
+	background: url(img/rncH.png) no-repeat;
+	background-size: contain;
 	float: left;
 	cursor: pointer;
 }
@@ -50,14 +52,26 @@ html, body {
 	cursor: pointer;
 	background: url(img/rncLogoVertical.png) no-repeat;
 }
-#logosAfidiItineris {
-	background: url(img/logoAfidiItineris.png) no-repeat;
-	height: 70px;
-	width: 170px;
+#logoAfidi {
+	background: url(img/afidi_blanco.png) no-repeat;
+	background-size: contain;
+	width: 40.5px;
+	height: 50px;
+	margin: 10px;
 	float: right;
+	cursor: pointer;
+}
+#logoItineris {
+	background: url(img/Itineris_blanco.png) no-repeat;
+	background-size: contain;
+	width: 87.5px;
+	height: 50px;
+	margin: 10px;
+	float: right;
+	cursor: pointer;
 }
 #navigation {
-	padding: 5px 0 20px 0;
+	padding: 2px 0 2px 0;
 	background-color: #FFFFFF;
 	min-height: 22px;
 	float: right;
@@ -67,8 +81,8 @@ html, body {
 	width: 15%;
 	float: left;
 	min-width: 174px;
-	margin: 1px 4px 2px 4px;
-	padding: 10px 0 10px 0;
+	margin: 1px 4px 2px 0px;
+	padding: 15px 0 15px 0;
 	cursor: pointer;
 	font-family: "Oswald";
 	font-weight: 300;
@@ -106,10 +120,9 @@ html, body {
 	height: 100%;
 }
 #imagenDestacado {
-	background: url(img/f4.jpg) no-repeat;
-	opacity: 0.5;
+	background: url(img/slide1.jpg) no-repeat;
 	background-size: cover;
-	min-height: 355px;
+	min-height: 255px;
 	height: 66%;
 	min-width: 675px;
 	width: 100%;
@@ -120,9 +133,8 @@ html, body {
 #bajada {
 	width: 50%;
 	height: 100%;
-	min-height: 355px;
+	min-height: 255px;
 	float: right;
-	opacity: 0.8;
 	padding: 0px 5px 0px 10px;
 	color: #FFFFFF;
 	cursor: pointer;
@@ -131,19 +143,20 @@ html, body {
 	font-size: 60px;
 	font-family: "Oswald";
 	font-weight: 700;
-	padding: 5px 10px 10px 5px;
-	margin: 0px;
+	width: 50%;
+	padding: 5px 10px 10px 0px;
+	margin: 0;
 }
 #bajada p {12px;
 	padding: 0px 10px 0px 5px;
-	font-size: 10px;
+	font-size: 12px;
 	font-family: "Signika";
+	color: #3B3B3B;
 }
 
 #ejemplarActual, #franjaDerecha {
 	width: 30%;
-	height: 100%;
-	min-height: 355px;
+	min-height: 255px;
 	float: right;
 	cursor: pointer;
 	margin: 0px 0px 0px 40px;
@@ -158,11 +171,13 @@ html, body {
 	margin: 0px;
 	font-family: "Oswald";
 	font-weight: 700;
+	line-height: 1;
 }
 
 .itemIndice {
-	font-size: 10px;
+	font-size: 12px;
 	font-family: "Signika";
+	color: #3B3B3B;
 	padding: 10px 0 5px 0;
 }
 #wrapperLinkHome {
@@ -205,15 +220,16 @@ html, body {
 	padding: 15px 15px 10px 5px;
 }
 .parrafoDestacado {
-	font-size: 14px;
+	font-size: 20px;
 	margin: 0px;
 	font-family: "Oswald";
 	font-weight: 700;
 	padding: 10px 0px 20px 0px;
 }
 .textoGeneral {
-	font-size: 10px;
+	font-size: 14px;
 	font-family: "Signika";
+	color: #3B3B3B;
 }
 
 #wrapperEjemplaresAnteriores {
@@ -232,8 +248,9 @@ html, body {
 }
 .ejemplarAnterior p {
 	padding-top: 5px;
-	font-size: 10px;
+	font-size: 12px;
 	font-family: "Signika";
+	color: #3B3B3B;
 }
 .accesoRecomendado {
 	width: 100%;
@@ -246,19 +263,24 @@ html, body {
 }
 
 .accesoRecomendado p {
-	font-size: 10px;
+	font-size: 12px;
 	font-family: "Signika";
+	color: #3B3B3B;
 	padding: 10px 0 5px 0;
 }
 
 #footer {
-	height: 75px;
+	height: 25px;
+	padding: 20px 0 0 0;
 	background-color: #FFFFFF;
 	position: relative;
 	bottom: 0px;
 	left: 0px;
-	width: 60%;
+	width: 80%;
+	margin-left: 10%;
 	float: left;
+	font-family: "Oswald";
+	font-weight: 400;
 }
 #datos {
 
@@ -266,16 +288,69 @@ html, body {
 #copyright {
 	float: left;
 	text-align: left;
-	margin-left: 30px;
-	position: absolute;
-	bottom: 0px;
 }
 #copyright1987 {
-	float: right;
+	float: left;
 	text-align: right;
-	margin-right: 30px;
-	position: absolute;
-	bottom: 0px;
-	right: 20px;
+	margin-left: 30px;
 }
-
+.campoFormulario {
+	min-width: 336px;
+	width: 35%;
+}
+.campoFormulario label {
+	color: #818286;
+	font-family: "Oswald";
+	font-weight: 300;
+}
+.campoFormulario input, .campoFormulario textarea  {
+	background-color: #818286;
+	color: #F6F7F9;
+	padding: 0 0 0 5px;
+	float: right;
+	width: 60%;
+	border: 0px;
+	resize: none;
+}
+.requerido:after {
+	content: '    ' url('img/infomas.png');
+	width: 10px;
+	height: 14px;
+}
+.error{
+	font-size: 12px;
+	font-family: "Signika";
+	color: #FF0000;
+	width: 100%;
+	display: block;
+}
+#ocurrioError{	
+	font-family: "Signika";
+	color: #FF0000;
+	width: 100%;
+	display: block;
+}
+#camposWrapper{
+	float: left;
+}
+.aclaracion{
+	float: left;
+	width: 100%;
+	padding: 10px 3px 10px 0px;
+	font-size:12px;
+	font-family: "Oswald";
+	font-weight: 300;
+}
+.botones{
+	float: left;
+}
+#accordion h3{
+	padding: 20px 0 30px 0;
+	margin: 20px 0 30px 0;
+	border: solid 1px #818286;
+	text-align:center;
+	font-size:25px;
+	font-family: "Oswald";
+	font-weight: 700;
+	cursor: pointer;
+ }
