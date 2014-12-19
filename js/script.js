@@ -11,12 +11,12 @@ $(document).ready(function() {
 	});
 	$('#logoItineris').click(function() {
 		window.open("http://www.itineris.org.ar/", '_blank');
-	});
+	});/*
 	$("#accordion").accordion({
 		active : false,
 		heightStyle : "content",
 		collapsible : true
-	});
+	});*/
 });
 function mandarMail() {
 
