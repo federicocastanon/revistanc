@@ -6,7 +6,7 @@
 		<link href='http://fonts.googleapis.com/css?family=Signika' rel='stylesheet' type='text/css'>
 		<link rel="shortcut icon" href="css/img/favicon.ico" />
 		<link rel="icon" type="image/ico" href="css/img/favicon.ico" />
-<link rel="stylesheet" type="text/css" media="screen" href="css/style.css"/>
+		<link rel="stylesheet" type="text/css" media="screen" href="css/style.css"/>
 		<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
 		<script type="text/javascript" src="js/script.js"></script>
 	</head>
@@ -30,27 +30,26 @@
 					PUBLICAR
 				</div> </a>
 				<a href="suscripcion.html">
-				<div id="suscripcion" class="linkNavegacion">
+				<div id="suscripcion" class="linkNavegacion seleccionado">
 					SUSCRIPCIÓN
 				</div> </a>
 				<a href="contacto.html">
-				<div id="contacto" class="linkNavegacion seleccionado" >
+				<div id="contacto" class="linkNavegacion" >
 					CONTACTO
 				</div> </a>
 			</div>
 		</div>
 		<div id="cuerpo">
 			<div id="franjaIzquierda">
-				<h1 class="tituloFranjaIzquierda">CONTACTO:</h1>
+				<h1 class="tituloFranjaIzquierda">Atención:</h1>
+				<p class="parrafoDestacado">
+					Todavía no terminamos, por favor complete sus datos para que podamos enviarle su pedido
+				</p>
 				<form class="formContacto" name="formu" id="formu" method="post" >
 					<div id="camposWrapper">
 						<div class="campoFormulario">
 							<label for="nombre" class="requerido">Nombre y Apellido</label>
 							<input id="nombre" type="text" tabindex="31">
-						</div>
-						<div class="campoFormulario">
-							<label for="organizacion">Organización</label>
-							<input id="organizacion" type="text" tabindex="32">
 						</div>
 						<div class="campoFormulario">
 							<label for="telefono">Teléfono</label>
@@ -60,22 +59,33 @@
 							<label for="mail" class="requerido">Correo electrónico</label>
 							<input id="mail" type="email" tabindex="34">
 						</div>
-						<div class="campoFormulario ">
-							<label for="consulta" class="requerido">Mensaje</label>
-							<textarea id="consulta" class="campoFormTextArea" name="consulta" cols="50" rows="3" tabindex="35" ></textarea>
+						<div class="campoFormulario">
+							<label for="dir" class="requerido">Dirección</label>
+							<input id="dir" type="text" tabindex="34">
 						</div>
+						<div class="campoFormulario">
+							<label for="ejemplar" class="requerido">Ejemplar deseado</label>
+							<select id="ejemplar">
+								<option value="0"><i>(seleccione el ejemplar deseado)</i></option>
+								<option value="1">Número 1 año 1</option>
+								<option value="2">Número 2 año 1</option>
+								<option value="3">Número 3 año 1</option>
+								<option value="4">Número 1 año 2</option>
+							</select>
+						</div>
+
 					</div>
 					<div class="aclaracion">
-						<span class="requerido">Los campos con </span><span> son datos imprescindibles para poder responderte</span>
+						<span class="requerido">Los campos con </span><span> son datos imprescindibles para poder ponernos en contacto</span>
 					</div>
 					<div class="botones">
-						<input type="button" value="Enviar" id="manda" name="manda" onclick="javascript:mandarMensaje();" class="btnEnviar" tabindex="36">
-						&nbsp;
-						<input type="reset" value="Borrar todo" class="btnEliminar" tabindex="37">
+						<input type="button" value="Enviar" id="manda" name="manda" onclick="javascript:mandarDatosEjemplar();" class="btnEnviar" tabindex="36">
+						
 					</div>
 				</form>
 			</div>
-			<div id="franjaDerecha"> <a href="publicar.html">
+			<div id="franjaDerecha">
+				<a href="publicar.html">
 				<div class="accesoRecomendado">
 					<h1>PUBLICAR UN ARTICULO EN RNC</h1>
 					<p>
@@ -93,10 +103,9 @@
 				<div class="accesoRecomendado">
 					<h1>SUSCRIBIRSE A RNC DIGITAL O IMPRESA</h1>
 					<p>
-		Si desea recibir los ejemplares de la revista en su domicilio ahora puede solicitarlos individualmente o todos juntos en 3 simples pasos sin moverse de su casa
-					</p> 
-				</div>
-				</a>
+						Si desea recibir los ejemplares de la revista en su domicilio ahora puede solicitarlos individualmente o todos juntos en 3 simples pasos sin moverse de su casa
+					</p>
+				</div> </a>
 			</div>
 			<div id="footer">
 				<p id="copyright">

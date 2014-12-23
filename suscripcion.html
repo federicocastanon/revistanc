@@ -1,238 +1,176 @@
-<div id="accordion">
-	<h3>Argentina</h3>
-	<div>
-		<div class="static_content_contenidos">
-			Edición en papel, válida sólo para Argentina.
-			<br>
-			<br>
-			Valor de la revista: $ 55* .- por ejemplar -
-			<br>
-			Valor anual, incluye 3 ejemplares: $ 140* .-&nbsp;
-			<br>
-			<br>
-			<br>
-			* Incluye envío.
-			<br>
-			<br type="_moz">
-		</div>
-		<div class="form_contacto borde_color_form">
-			<form name="frm_newsletter" id="frm_newsletter" method="POST" action="../../../../index.php" onsubmit="return checkFormFields(this)" enctype="multipart/form-data">
-				<!-- HIDDEN SECTION -->
-				<input type="hidden" name="action" id="action" value="form/modifyForm">
-				<input type="hidden" value="../../../../index.php?action=portal/viewContent&amp;cntId_content=2722&amp;id_section=131&amp;msg=1" name="_redirect">
-				<input type="hidden" name="frmType" id="frmType" value="2">
-				<input type="hidden" name="_send_mails" value="1">
-				<input type="hidden" name="_name_from" value="RNC - Revista Nuestros Contenidos">
-				<input type="hidden" name="_design" value="../../../../modules/mails/html_mail_files/suscripcion_rnc.html">
-				<input type="hidden" name="_subject" value="RNC - Revista Nuestros Contenidos | Suscripcion a RNC">
-				<input type="hidden" name="_send_thanks" value="1">
-				<input type="hidden" name="_design_thanks" value="../../../../modules/mails/html_mail_files/sucripcion_rnc_usuario.html">
-				<input type="hidden" name="form_fields[Suscripcion]" value="Suscripción a RNC">
-				<!-- VISIBLES SECTIONS -->
-				<table cellspacing="1" cellpadding="0" border="0" class="form_contacto_tabla">
-					<tbody>
-						<tr>
-							<td align="center" colspan="3">
-							<div class="form_contacto_titulo  color_fuente borde_color_form">
-								Datos Personales
-							</div></td>
-						</tr>
-						<tr>
-							<td colspan="3" class="form_contacto_separador"><img width="1" height="1" src="../../../../modules/skins//images/clear.gif" alt=""></td>
-						</tr>
-						<tr>
-							<td nowrap="nowrap" align="center" class="form_contacto_texto" bgcolor="#fff" colspan="3">
-							<div><img width="1" height="12" src="../../../../modules/skins//images/clear.gif" alt="">
-							</div><strong>* Tipo de suscripción:&nbsp;
-							<br>
-							</strong>
-							<table cellspacing="1" cellpadding="0" border="0">
-								<tbody>
-									<tr id="tr_tipo_suscripcion">
-										<td>
-										<input id="rad_personal" type="radio" name="form_fields[Tipo_suscripcion]" value="Personal" tabindex="2" checkfor="Empty|msg:Por favor complete todos los campos obligatorios * Tipo de suscripción.">
-										</td><td class="form_contacto_texto">Personal</td><td width="25"></td><td>
-										<input type="radio" name="form_fields[Tipo_suscripcion]" value="Institucional" tabindex="5" checkfor="Empty|msg:Por favor complete todos los campos obligatorios *.">
-										</td><td class="form_contacto_texto">Institucional</td>
-									</tr>
-								</tbody>
-							</table>
-							<div><img width="1" height="5" src="../../../../modules/skins//images/clear.gif" alt="">
-							</div></td>
-						</tr>
-						<tr>
-							<td colspan="3" class="form_contacto_separador"><img width="1" height="1" src="../../../../modules/skins//images/clear.gif" alt=""></td>
-						</tr>
-						<tr>
-							<td nowrap="nowrap" align="right" class="form_contacto_texto">* Valor suscripción:&nbsp;</td><td>&nbsp;</td><td>
-							<select name="form_fields[Valor_suscripcion]" class="form_contacto_campos" style="width:340px;">
-								<option value="Ejemplar 01 - 2014$ 55">Ejemplar 01 2014- $ 90</option>
-								<option value="Suscripcion 2014">Suscripción anual 2014 240 incluído el envío (tres ejemplares) </option>
-								<option value="Ejemplar 01 - 2013 $ 55">Ejemplar 01 2013- $ 90</option>
-								<option value="Ejemplar 02 - 2013 $ 55">Ejemplar 02 2013- $ 90</option>
-								<option value="Ejemplar 03 - 2013 $ 55">Ejemplar 03 2013- $ 90</option>
-								<option value="Suscripción 2013">Suscripción anual 2013 $ 240 incluído el envío (tres ejemplares)</option>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>Revista Nuestros Contenidos</title>
+		<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Signika' rel='stylesheet' type='text/css'>
+		<link rel="shortcut icon" href="css/img/favicon.ico" />
+		<link rel="icon" type="image/ico" href="css/img/favicon.ico" />
+		<link rel="stylesheet" type="text/css" media="screen" href="css/style.css"/>
+		<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+	</head>
+	<body>
 
-							</select></td>
-						</tr>
-						<tr>
-							<td colspan="3" class="form_contacto_separador"><img width="1" height="1" src="../../../../modules/skins//images/clear.gif" alt=""></td>
-						</tr>
-						<tr class="personal">
-							<td nowrap="nowrap" align="right" class="form_contacto_texto">* Nombre:&nbsp;</td><td>&nbsp;</td><td>
-							<input type="text" name="form_fields[Nombre]" tabindex="10" checkfor="Empty|msg:Por favor complete todos los campos obligatorios *." class="form_contacto_campos" style="width:340px;">
-							</td>
-						</tr>
-						<tr class="personal">
-							<td colspan="3" class="form_contacto_separador"><img width="1" height="1" src="../../../../modules/skins//images/clear.gif" alt=""></td>
-						</tr><!----------------------- -->
-						<tr class="personal">
-							<td nowrap="nowrap" align="right" class="form_contacto_texto">*Apellido:&nbsp;</td><td>&nbsp;</td><td>
-							<input type="text" name="form_fields[Apellido]" tabindex="20" checkfor="Empty|msg:Por favor complete todos los campos obligatorios *." class="form_contacto_campos" style="width:340px;">
-							</td>
-						</tr>
-						<tr class="personal">
-							<td colspan="3" class="form_contacto_separador"><img width="1" height="1" src="../../../../modules/skins//images/clear.gif" alt=""></td>
-						</tr><!----------------------- -->
-						<tr>
-							<td align="right" class="form_contacto_texto">* Email:&nbsp;</td><td>&nbsp;</td><td>
-							<input type="text" name="form_fields[Email]" value="" tabindex="30" checkfor="Email|msg:El e-mail ingresado no es válido." class="form_contacto_campos" style="width:340px;">
-							</td>
-						</tr>
-						<tr>
-							<td colspan="3" class="form_contacto_separador"><img width="1" height="25" src="../../../../modules/skins//images/clear.gif" alt=""></td>
-						</tr><!----------------------- -->
-						<tr class="institucional" style="display: none; ">
-							<td nowrap="nowrap" align="right" class="form_contacto_texto">*Institución / CUIT N°:&nbsp;</td><td>&nbsp;</td><td>
-							<input type="text" name="form_fields[Institucion]" tabindex="40" class="form_contacto_campos" style="width:240px;">
-							<input type="text" name="form_fields[Cuit]" tabindex="50" class="form_contacto_campos" style="width:80px; margin-left: 13px;">
-							</td>
-						</tr>
-						<tr>
-							<td colspan="3" class="form_contacto_separador"><img width="1" height="1" src="../../../../modules/skins//images/clear.gif" alt=""></td>
-						</tr><!----------------------- -->
-						<tr>
-							<td nowrap="nowrap" align="right" class="form_contacto_texto">*Dirección / N° / Piso:&nbsp;</td><td>&nbsp;</td><td>
-							<input type="text" name="form_fields[Direccion]" tabindex="60" checkfor="Empty|msg:Por favor complete todos los campos obligatorios *." class="form_contacto_campos" style="width:180px;">
-							<input type="text" name="form_fields[Numero]" tabindex="70" checkfor="Empty|msg:Por favor complete todos los campos obligatorios *." class="form_contacto_campos" style="width:70px; margin-left: 13px;">
-							<input type="text" name="form_fields[Piso]" tabindex="80" class="form_contacto_campos" style="width:50px; margin-left: 13px;">
-							</td>
-						</tr>
-						<tr>
-							<td colspan="3" class="form_contacto_separador"><img width="1" height="1" src="../../../../modules/skins//images/clear.gif" alt=""></td>
-						</tr><!----------------------- -->
-						<tr>
-							<td nowrap="nowrap" align="right" class="form_contacto_texto">*Localidad / C.Postal:&nbsp;</td><td>&nbsp;</td><td>
-							<input type="text" name="form_fields[Localidad]" tabindex="90" checkfor="Empty|msg:Por favor complete todos los campos obligatorios *." class="form_contacto_campos" style="width:240px;">
-							<input type="text" name="form_fields[CPostal]" tabindex="100" checkfor="Empty|msg:Por favor complete todos los campos obligatorios *." class="form_contacto_campos" style="width:80px; margin-left: 13px;">
-							</td>
-						</tr>
-						<tr>
-							<td colspan="3" class="form_contacto_separador"><img width="1" height="1" src="../../../../modules/skins//images/clear.gif" alt=""></td>
-						</tr><!----------------------- -->
-						<tr>
-							<td nowrap="nowrap" align="right" class="form_contacto_texto">*Provincia / Pais:&nbsp;</td><td>&nbsp;</td><td>
-							<input type="text" name="form_fields[Provincia]" tabindex="110" checkfor="Empty|msg:Por favor complete todos los campos obligatorios *." class="form_contacto_campos" style="width:160px;">
-							<input type="text" name="form_fields[Pais]" tabindex="120" checkfor="Empty|msg:Por favor complete todos los campos obligatorios *." class="form_contacto_campos" style="width:160px; margin-left: 13px;">
-							</td>
-						</tr>
-						<tr>
-							<td colspan="3" class="form_contacto_separador"><img width="1" height="10" src="../../../../modules/skins//images/clear.gif" alt=""></td>
-						</tr><!----------------------- -->
-						<tr>
-							<td align="right" class="form_contacto_texto">* Teléfono:&nbsp;</td><td>&nbsp;</td><td>
-							<input type="text" name="form_fields[Telefono]" value="" tabindex="120" checkfor="Empty|msg:Por favor complete todos los campos obligatorios *." class="form_contacto_campos" style="width:340px;">
-							</td>
-						</tr>
-						<tr>
-							<td colspan="3" class="form_contacto_separador"><img width="1" height="25" src="../../../../modules/skins//images/clear.gif" alt=""></td>
-						</tr><!----------------------- -->
-						<tr>
-							<td class="form_contacto_texto_obliga" align="center" colspan="3" height="30">*Campos obligatorios.</td>
-						</tr>
-						<tr>
-							<td colspan="3" class="form_contacto_separador"><img width="1" height="1" src="../../../../modules/skins//images/clear.gif" alt=""></td>
-						</tr>
-					</tbody>
-				</table>
-				<div nowrap="nowrap" class="form_contacto_bnt_enviar color_fuente">
-					<a href="#" id="submit" name="submit" onclick="javascript: if(checkFormFields(document.frm_newsletter)) frm_newsletter.submit();">Enviar Suscripción »</a>
-				</div>
-			</form>
-		</div>
-	</div>
-	<h3>Resto del mundo</h3>
-	<div>
-		<div class="form_contacto borde_color_form">
-			<p class="aclaracion">
-				<strong> El precio de la versión impresa incluye el envío.</strong>
-			</p>
-			<p class="aclaracion">
-				Valor de cada ejemplar (Versión digital) - US$ 10
-				<br />
-				Valor de cada ejemplar (Versión impresa) - US$ 25
-			</p>
-			<p class="aclaracion">
-				Valor de la suscripción anual (incluye 3 ejemplares, versión digital)- US$ 25
-				<br />
-				Valor de la suscripción anual (incluye 3 ejemplares, versión impresa)- US$ 45
-			</p>
-			<div class="form_contacto_titulo  color_fuente borde_color_form" style="border: 0">
-				<h2 style="margin-bottom: 5px;">2014</h2>
-				<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-					<input type="hidden" name="cmd" value="_s-xclick">
-					<input type="hidden" name="hosted_button_id" value="9KTE39C5PZZ7A">
-					<table>
-						<tr>
-							<td>
-							<input type="hidden" name="on0" value="Opciones">
-							Opciones</td>
-						</tr>
-						<tr>
-							<td>
-							<select name="os0">
-								<option value="Suscripción Digital anual 2014">Suscripción Digital anual 2014 $25,00 USD</option>
-								<option value="Ejemplar 01 2014 Digital">Ejemplar 01 2014 Digital $10,00 USD</option>
-								<option value="Suscripción Anual 2014 (Versión impresa)">Suscripción Anual 2014 (Versión impresa) $45,00 USD</option>
-								<option value="Ejemplar 01 2014 (Versión impresa)">Ejemplar 01 2014 (Versión impresa) $25,00 USD</option>
-							</select></td>
-						</tr>
-					</table>
-					<input type="hidden" name="currency_code" value="USD">
-					<input type="image" src="https://www.paypalobjects.com/es_ES/ES/i/btn/btn_paynowCC_LG.gif" border="0" name="submit" alt="PayPal. La forma rápida y segura de pagar en Internet.">
-					<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-				</form>
-
-				<h2 style="margin-bottom: 5px;">2013</h2>
-				<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-					<input type="hidden" name="cmd" value="_s-xclick">
-					<input type="hidden" name="hosted_button_id" value="TBN8RVEQVT6AJ">
-					<table>
-						<tr>
-							<td>
-							<input type="hidden" name="on0" value="Opciones">
-							Opciones</td>
-						</tr>
-						<tr>
-							<td>
-							<select name="os0">
-								<option value="Suscripción Digital anual 2013">Suscripción Digital anual 2013 $25,00 USD</option>
-								<option value="Ejemplar 03 2013 Digital">Ejemplar 03 2013 Digital $10,00 USD</option>
-								<option value="Ejemplar 02 2013 Digital">Ejemplar 02 2013 Digital $45,00 USD</option>
-								<option value="Ejemplar 01 2013 Digital">Ejemplar 01 2013 Digital $25,00 USD</option>
-								<option value="Suscripción Anual 2013 (Versión impresa)">Suscripción Anual 2013 (Versión impresa) $45,00 USD</option>
-								<option value="Ejemplar 03 2013 (Versión impresa)">Ejemplar 03 2013 (Versión impresa) $25,00 USD</option>
-								<option value="Ejemplar 02 2013 (Versión impresa)">Ejemplar 02 2013 (Versión impresa) $25,00 USD</option>
-								<option value="Ejemplar 01 2013 (Versión impresa)">Ejemplar 01 2013 (Versión impresa) $25,00 USD</option>
-							</select></td>
-						</tr>
-					</table>
-					<input type="hidden" name="currency_code" value="USD">
-					<input type="image" src="https://www.paypalobjects.com/es_ES/ES/i/btn/btn_paynowCC_LG.gif" border="0" name="submit" alt="PayPal. La forma rápida y segura de pagar en Internet.">
-					<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-				</form>
-
+		<div id="headear">
+			<div id="logoNC"></div>
+			<div id="logoAfidi"></div>
+			<div id="logoItineris"></div>
+			<div id="navigation">
+				<a href="secciones.html">
+				<div id="secciones" class="linkNavegacion largo"  >
+					ESTRUCTURA Y SECCIONES
+				</div> </a>
+				<a href="ejemplares.html">
+				<div id="ejemplares" class="linkNavegacion" >
+					EJEMPLARES
+				</div> </a>
+				<a href="publicar.html">
+				<div id="publicar" class="linkNavegacion">
+					PUBLICAR
+				</div> </a>
+				<a href="suscripcion.html">
+				<div id="suscripcion" class="linkNavegacion seleccionado">
+					SUSCRIPCIÓN
+				</div> </a>
+				<a href="contacto.html">
+				<div id="contacto" class="linkNavegacion" >
+					CONTACTO
+				</div> </a>
 			</div>
 		</div>
-	</div>
-</div>
+		<div id="cuerpo">
+			<div id="franjaIzquierda">
+				<h1 class="tituloFranjaIzquierda">Suscripción</h1>
+
+				<p class="parrafoDestacado">
+					Elija la opción correspondiente a su país
+				</p>
+				<div id="accordion">
+					<h3>Argentina</h3>
+					<div>
+					<a href="https://www.mercadopago.com/mla/checkout/pay?pref_id=164442591-bc103d9f-03c1-48ed-a837-496ad395cbce" name="MP-payButton" class="lightblue-ar-l-rn-arall">Ejemplar</a>
+<script type="text/javascript">
+(function(){function $MPBR_load(){window.$MPBR_loaded !== true && (function(){var s = document.createElement("script");s.type = "text/javascript";s.async = true;s.src = ("https:"==document.location.protocol?"https://www.mercadopago.com/org-img/jsapi/mptools/buttons/":"http://mp-tools.mlstatic.com/buttons/")+"render.js";var x = document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s, x);window.$MPBR_loaded = true;})();}window.$MPBR_loaded !== true ? (window.attachEvent ?window.attachEvent('onload', $MPBR_load) : window.addEventListener('load', $MPBR_load, false)) : null;})();
+</script>	
+
+<a href="https://www.mercadopago.com/mla/checkout/pay?pref_id=164442591-5209a45c-f859-4343-a6b9-a75dcc451626" name="MP-payButton" class="lightblue-ar-l-rn-arall">Suscripción</a>
+<script type="text/javascript">
+(function(){function $MPBR_load(){window.$MPBR_loaded !== true && (function(){var s = document.createElement("script");s.type = "text/javascript";s.async = true;s.src = ("https:"==document.location.protocol?"https://www.mercadopago.com/org-img/jsapi/mptools/buttons/":"http://mp-tools.mlstatic.com/buttons/")+"render.js";var x = document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s, x);window.$MPBR_loaded = true;})();}window.$MPBR_loaded !== true ? (window.attachEvent ?window.attachEvent('onload', $MPBR_load) : window.addEventListener('load', $MPBR_load, false)) : null;})();
+</script>	
+						
+					</div>
+					<h3>Resto del mundo</h3>
+					<div>
+						<div class="form_contacto borde_color_form">
+							<p class="aclaracion">
+								<strong> El precio de la versión impresa incluye el envío.</strong>
+							</p>
+							<p class="aclaracion">
+								Valor de cada ejemplar (Versión digital) - US$ 10
+								<br />
+								Valor de cada ejemplar (Versión impresa) - US$ 25
+							</p>
+							<p class="aclaracion">
+								Valor de la suscripción anual (incluye 3 ejemplares, versión digital)- US$ 25
+								<br />
+								Valor de la suscripción anual (incluye 3 ejemplares, versión impresa)- US$ 45
+							</p>
+							<div class="form_contacto_titulo  color_fuente borde_color_form" style="border: 0">
+								<h2 style="margin-bottom: 5px;">2014</h2>
+								<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+									<input type="hidden" name="cmd" value="_s-xclick">
+									<input type="hidden" name="hosted_button_id" value="9KTE39C5PZZ7A">
+									<table>
+										<tr>
+											<td>
+											<input type="hidden" name="on0" value="Opciones">
+											Opciones</td>
+										</tr>
+										<tr>
+											<td>
+											<select name="os0">
+												<option value="Suscripción Digital anual 2014">Suscripción Digital anual 2014 $25,00 USD</option>
+												<option value="Ejemplar 01 2014 Digital">Ejemplar 01 2014 Digital $10,00 USD</option>
+												<option value="Suscripción Anual 2014 (Versión impresa)">Suscripción Anual 2014 (Versión impresa) $45,00 USD</option>
+												<option value="Ejemplar 01 2014 (Versión impresa)">Ejemplar 01 2014 (Versión impresa) $25,00 USD</option>
+											</select></td>
+										</tr>
+									</table>
+									<input type="hidden" name="currency_code" value="USD">
+									<input type="image" src="https://www.paypalobjects.com/es_ES/ES/i/btn/btn_paynowCC_LG.gif" border="0" name="submit" alt="PayPal. La forma rápida y segura de pagar en Internet.">
+									<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+								</form>
+
+								<h2 style="margin-bottom: 5px;">2013</h2>
+								<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+									<input type="hidden" name="cmd" value="_s-xclick">
+									<input type="hidden" name="hosted_button_id" value="TBN8RVEQVT6AJ">
+									<table>
+										<tr>
+											<td>
+											<input type="hidden" name="on0" value="Opciones">
+											Opciones</td>
+										</tr>
+										<tr>
+											<td>
+											<select name="os0">
+												<option value="Suscripción Digital anual 2013">Suscripción Digital anual 2013 $25,00 USD</option>
+												<option value="Ejemplar 03 2013 Digital">Ejemplar 03 2013 Digital $10,00 USD</option>
+												<option value="Ejemplar 02 2013 Digital">Ejemplar 02 2013 Digital $45,00 USD</option>
+												<option value="Ejemplar 01 2013 Digital">Ejemplar 01 2013 Digital $25,00 USD</option>
+												<option value="Suscripción Anual 2013 (Versión impresa)">Suscripción Anual 2013 (Versión impresa) $45,00 USD</option>
+												<option value="Ejemplar 03 2013 (Versión impresa)">Ejemplar 03 2013 (Versión impresa) $25,00 USD</option>
+												<option value="Ejemplar 02 2013 (Versión impresa)">Ejemplar 02 2013 (Versión impresa) $25,00 USD</option>
+												<option value="Ejemplar 01 2013 (Versión impresa)">Ejemplar 01 2013 (Versión impresa) $25,00 USD</option>
+											</select></td>
+										</tr>
+									</table>
+									<input type="hidden" name="currency_code" value="USD">
+									<input type="image" src="https://www.paypalobjects.com/es_ES/ES/i/btn/btn_paynowCC_LG.gif" border="0" name="submit" alt="PayPal. La forma rápida y segura de pagar en Internet.">
+									<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+								</form>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div id="franjaDerecha">
+				<a href="publicar.html">
+				<div class="accesoRecomendado">
+					<h1>PUBLICAR UN ARTICULO EN RNC</h1>
+					<p>
+						Siguiendo la política editorial, detallamos los requerimientos necesarios para que una propuesta sea aceptable para el comité de redacción, paso previo a la revisión anónima que culmina el proceso de aceptación
+					</p>
+				</div> </a>
+				<a href="archivos/informacionAnunciantes.pdf" target="_blank">
+				<div class="accesoRecomendado">
+					<h1>PARTICIPAR COMO ANUNCIANTE EN RNC</h1>
+					<p>
+						Enterese cuáles son los espacios disponibles y las posibilidades de anunciar en la revista
+					</p>
+				</div> </a>
+				<a href="suscripcion.html">
+				<div class="accesoRecomendado">
+					<h1>SUSCRIBIRSE A RNC DIGITAL O IMPRESA</h1>
+					<p>
+						Si desea recibir los ejemplares de la revista en su domicilio ahora puede solicitarlos individualmente o todos juntos en 3 simples pasos sin moverse de su casa
+					</p>
+				</div> </a>
+			</div>
+			<div id="footer">
+				<p id="copyright">
+					&copy; Revista NC 2014
+				</p>
+				<p id="copyright1987">
+					&copy; 1987 Graphic &amp; Web Design
+				</p>
+			</div>
+		</div>
+
+	</body>
+
+</html>
