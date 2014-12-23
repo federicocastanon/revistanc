@@ -1,4 +1,4 @@
-/*PARA ALTOS MENORES A 800*/
+/*PARA ALTOS MAYORES A 900*/
 /*CAMBIAR EN CADA IMPLEMENTACION*/
 /*
 
@@ -29,9 +29,6 @@
 * {
 	margin: 0;
 }
-a, a:link, a:visited, a:active {	
-	text-decoration: none;
-}
 
 html, body {
 	min-height: 100%;
@@ -40,7 +37,7 @@ html, body {
 
 #headear {
 	min-height: 116px;
-	height: 19%;
+	height:19%;
 	width: 80%;
 	position: absolute;
 	top: 0;
@@ -65,45 +62,57 @@ html, body {
 #logoAfidi {
 	background: url(img/afidi_blanco.png) no-repeat;
 	background-size: contain;
+	width: 40.5px;
 	height: 48%;
-	margin: 0.8%;
+	margin: 10px;
 	float: right;
 	cursor: pointer;
 }
 #logoItineris {
 	background: url(img/Itineris_blanco.png) no-repeat;
 	background-size: contain;
+	width: 87.5px;
 	height: 48%;
-	margin: 0.8%;
+	margin: 10px;
 	float: right;
 	cursor: pointer;
 }
 #navigation {
-	padding: 2px 0 2px 0;
+	padding: 0 0 0 2%;
 	background-color: #FFFFFF;
 	min-height: 22px;
 	float: right;
-	width: 100%;
+	width: 98%;
 }
 .linkNavegacion {
 	float: left;
-	width: 15%;
+	min-width: 174px;
+	margin: 1px 4px 2px 0px;
+	padding: 1% 1% 1% 1%;
 	cursor: pointer;
+	font-size: 36px;
 	font-family: "Oswald";
 	font-weight: 300;
-	text-align: center;	
+}
+.largo {
+
+}
+.linkNavegacion a {
+	text-align: center;
+	display: block;
+	width: 100%;
+	text-decoration: none;
 	color: #000000;
 	cursor: pointer;
 }
-.largo {
-	width: 25% !important;
+.linkNavegacion a:visited, .linkNavegacion a:active, .linkNavegacion a:focus {
+	text-decoration: none;
 }
-
-
-#cuerpoHome {
+#cuerpoHome{
 	min-height: 80%;
 	width: 80%;
 	background-color: #FFFFFF;
+	top:19%;
 	left: 10%;
 	position: absolute;
 }
@@ -111,12 +120,12 @@ html, body {
 	min-height: 80%;
 	width: 80%;
 	background-color: #FFFFFF;	
+	top:19%;
 	left: 10%;
 	position: absolute;
 }
 #franjaIzquierda, #franjaIzquierdaHome {
 	width: 60%;
-	min-height: 90%;
 	float: left;
 }
 
@@ -144,16 +153,18 @@ html, body {
 	cursor: pointer;
 }
 #bajada h1, .tituloFranjaIzquierda {
-
+	font-size: 72px;
 	font-family: "Oswald";
 	font-weight: 700;
+	padding: 5px 10px 10px 0px;
 	margin: 0;
 }
-.tituloFranjaIzquierda {
-	width: 75%%;
+.tituloFranjaIzquierda{	
+	width: 50%;
 }
 #bajada p {
-
+	padding: 0px 10px 0px 5px;
+	font-size: 22px;
 	font-family: "Signika";
 	color: #3B3B3B;
 }
@@ -161,24 +172,28 @@ html, body {
 #ejemplarActual, #franjaDerecha {
 	width: 30%;
 	min-height: 255px;
-	float: right;	
+	float: right;
+	cursor: pointer;
 	margin: 0px 0px 0px 40px;
 }
 #ejemplarActual h1 {
+	font-size: 16px;
 	font-family: "Oswald";
 	font-weight: 300;
 }
 #ejemplarActual h2 {
+	font-size: 240px;
 	margin: 0px;
 	font-family: "Oswald";
 	font-weight: 700;
 	line-height: 1;
-	cursor: pointer;
 }
 
 .itemIndice {
+	font-size: 18px;
 	font-family: "Signika";
 	color: #3B3B3B;
+	padding: 10px 0 5px 0;
 }
 #wrapperLinkHome {
 	padding: 30px 5px 3px 0px;
@@ -191,14 +206,15 @@ html, body {
 	min-height: 100px;
 	font-family: "Oswald";
 	font-weight: 700;
+	font-size: 72px;
 	cursor: pointer;
 }
 .anunciar {
-	width: 40%;
+	width: 260px;
 	float: left;
 }
 .publicar {
-	width: 40%;
+	width: 260px;
 	float: right;
 }
 
@@ -207,6 +223,8 @@ html, body {
 	padding: 30px 0px 5px 5px;
 }
 #ejemplarDestacado h1 {
+	font-size: 62px;
+	margin: 0px;
 	font-family: "Oswald";
 	font-weight: 700;
 }
@@ -216,11 +234,14 @@ html, body {
 	padding: 15px 15px 10px 5px;
 }
 .parrafoDestacado {
+	font-size: 24px;
 	margin: 0px;
 	font-family: "Oswald";
 	font-weight: 700;
+	padding: 10px 0px 20px 0px;
 }
 .textoGeneral {
+	font-size: 16px;
 	font-family: "Signika";
 	color: #3B3B3B;
 }
@@ -240,6 +261,8 @@ html, body {
 	margin-left: 10%;
 }
 .ejemplarAnterior p {
+	padding-top: 5px;
+	font-size: 70%;
 	font-family: "Signika";
 	color: #3B3B3B;
 }
@@ -247,13 +270,17 @@ html, body {
 	width: 100%;
 }
 .accesoRecomendado h1 {
+	font-size: 42px;
+	margin: 0px;
 	font-family: "Oswald";
 	font-weight: 700;
 }
 
 .accesoRecomendado p {
+	font-size: 18px;
 	font-family: "Signika";
 	color: #3B3B3B;
+	padding: 10px 0 5px 0;
 }
 
 #footer {
@@ -284,6 +311,7 @@ html, body {
 	min-width: 356px;
 	width: 70%;
 	margin-bottom: 10px;
+	font-size: 24px;
 }
 .campoFormulario label {
 	color: #818286;
@@ -297,6 +325,7 @@ html, body {
 	float: right;
 	width: 60%;
 	border: 0px;
+	font-size: 24px;
 	resize: none;
 }
 .requerido:after {
@@ -305,6 +334,7 @@ html, body {
 	height: 14px;
 }
 .error {
+	font-size: 70%;
 	font-family: "Signika";
 	color: #FF0000;
 	width: 100%;
@@ -322,183 +352,21 @@ html, body {
 .aclaracion {
 	float: left;
 	width: 100%;
+	padding: 10px 3px 10px 0px;
+	font-size: 16px;
 	font-family: "Oswald";
 	font-weight: 300;
 }
 .botones {
 	float: left;
 }
-
-.texto a:link, .texto a:visited, .texto a:active {
-	font-family: "Signika";
-	color: #3B3B3B;
-}
-.texto a:hover {
-	font-weight: bold;
-}
-.azul{
-	color: #1111EE !important;
-}
-.linkArticulo,  .linkArticulo:link, .linkArticulo:visited, .linkArticulo:active{
-	color: #1111EE;
-	font-style: italic;
-}
-.linkArticulo:hover{
-	font-weight: bold;
-}
-
-@media screen and (max-height: 678px) {
-
-	#logoAfidi {
-		width: 100px;
-	}
-	#logoItineris {
-		width: 100px;
-	}
-	#cuerpoHome, #cuerpo {
-		top: 19%;
-	}
-	.linkNavegacion {
-		margin: 1px 4px 2px 0px;
-		padding: 1% 1% 1% 1%;
-		font-size: 12px;
-	}
-	#bajada h1, .tituloFranjaIzquierda {
-		font-size: 400%;
-		padding: 5px 10px 10px 0px;
-	}
-	#bajada p {
-		font-size: 70%;
-		padding: 0px 10px 0px 5px;
-	}
-	#ejemplarActual h1 {
-		font-size: 16px;
-	}
-	#ejemplarActual h2 {
-		font-size: 1000%;
-	}
-	.itemIndice {
-		font-size: 70%;
-		padding: 10px 0 5px 0;
-	}
-	.linkHome {
-		font-size: 50px;
-	}
-	#ejemplarDestacado h1 {
-		font-size: 240%;
-	}
-	.parrafoDestacado {
-		font-size: 130%;
-		padding: 10px 0px 20px 0px;
-	}
-	.textoGeneral {
-		font-size: 90%;
-	}
-	.ejemplarAnterior p {
-		padding-top: 5px;
-		font-size: 70%;
-	}
-	.tituloSeccion{
-		font-size: 240%;
-	}
-	
-	.accesoRecomendado h1 {
-		font-size: 240%;
-	}
-	.accesoRecomendado p {
-		font-size: 70%;
-		padding: 10px 0 5px 0;
-	}
-	.error {
-		font-size: 70%;
-	}
-	.aclaracion {
-		padding: 10px 3px 10px 0px;
-		font-size: 70%;
-	}
-	.campoFormulario {
-		margin-bottom: 10px;
-		font-size: 70%;
-	}
-	.campoFormulario input, .campoFormulario textarea {
-		padding: 0 0 0 5px;
-		font-size: 70%;
-	}
-}
-@media screen and (min-height: 678px) {
-	#logoAfidi {
-		width: 120px;
-	}
-	#logoItineris {
-		width: 140px;
-	}
-	#cuerpoHome, #cuerpo {
-		top: 21%;
-	}
-	.linkNavegacion {
-		font-size: 36px;
-		margin: 1px 4px 2px 0px;
-		padding: 1% 1% 1% 1%;
-	}
-	#bajada h1, .tituloFranjaIzquierda {
-		font-size: 72px;
-		padding: 5px 10px 10px 0px;
-	}
-	#bajada p {
-		font-size: 22px;
-		padding: 0px 10px 40px 5px;
-	}
-	#ejemplarActual h1 {
-		font-size: 36px;
-	}
-	#ejemplarActual h2 {
-		font-size: 190px;
-	}
-	.itemIndice {
-		font-size: 18px;
-		padding: 10px 0 5px 0;
-	}
-	.linkHome {
-		font-size: 72px;
-	}
-	#ejemplarDestacado h1 {
-		font-size: 62px;
-	}
-	.parrafoDestacado {
-		font-size: 24px;
-		padding: 10px 0px 20px 0px;
-	}
-	.textoGeneral {
-		font-size: 16px;
-	}
-	.ejemplarAnterior p {
-		padding-top: 5px;
-		font-size: 16px;
-	}
-	
-	.tituloSeccion{
-		font-size: 42px;
-	}
-	.accesoRecomendado h1 {
-		font-size: 42px;
-	}
-	.accesoRecomendado p {
-		font-size: 18px;
-		padding: 10px 0 5px 0;
-	}
-	.error {
-		font-size: 16px;
-	}
-	.aclaracion {
-		padding: 10px 3px 10px 0px;
-		font-size: 16px;
-	}
-	.campoFormulario {
-		margin-bottom: 10px;
-		font-size: 24px;
-	}
-	.campoFormulario input, .campoFormulario textarea {
-		padding: 0 0 0 5px;
-		font-size: 24px;
-	}
+#accordion h3 {
+	padding: 20px 0 30px 0;
+	margin: 20px 0 30px 0;
+	border: solid 1px #818286;
+	text-align: center;
+	font-size: 25px;
+	font-family: "Oswald";
+	font-weight: 700;
+	cursor: pointer;
 }
