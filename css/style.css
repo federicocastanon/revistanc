@@ -47,13 +47,11 @@ html, body {
 	left: 10%;
 }
 #logoNC {
-	height: 48%;
-	margin: 10px;
-	width: 354px;
 	background: url(img/rncH.png) no-repeat;
 	background-size: contain;
 	float: left;
 	cursor: pointer;
+	margin: 0.8%;
 }
 #logoVerticalNC {
 	height: 200px;
@@ -65,7 +63,6 @@ html, body {
 #logoAfidi {
 	background: url(img/afidi_blanco.png) no-repeat;
 	background-size: contain;
-	height: 48%;
 	margin: 0.8%;
 	float: right;
 	cursor: pointer;
@@ -73,7 +70,6 @@ html, body {
 #logoItineris {
 	background: url(img/Itineris_blanco.png) no-repeat;
 	background-size: contain;
-	height: 48%;
 	margin: 0.8%;
 	float: right;
 	cursor: pointer;
@@ -82,7 +78,8 @@ html, body {
 	padding: 2px 0 2px 0;
 	background-color: #FFFFFF;
 	min-height: 22px;
-	float: right;
+	bottom: 0;
+	position: absolute;
 	width: 100%;
 }
 .linkNavegacion {
@@ -374,11 +371,17 @@ html, body {
 
 @media screen and (max-height: 800px) {
 
+	#logoNC {
+		height: 48%;
+		width: 354px;
+	}
 	#logoAfidi {
 		width: 100px;
+		height: 48%;
 	}
 	#logoItineris {
 		width: 100px;
+		height: 48%;
 	}
 	#cuerpoHome, #cuerpo {
 		top: 19%;
@@ -468,14 +471,20 @@ html, body {
 	}
 }
 @media screen and (min-height: 800px) {
+	#logoNC {
+		height: 40%;
+		min-width: 354px;
+	}
 	#logoAfidi {
 		width: 120px;
+		height: 40%;
 	}
 	#logoItineris {
 		width: 140px;
+		height: 40%;
 	}
 	#cuerpoHome, #cuerpo {
-		top: 21%;
+		top: 19%;
 	}
 	.linkNavegacion {
 		font-size: 36px;
