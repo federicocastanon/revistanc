@@ -8,14 +8,14 @@
  * ejemplar 4 C7A2CB
  *
  * */
-#headear, .destacadoHome, .linkActivo, #bajada, #imagenDestacado, .linkHome, .seleccionado, .linkNavegacion:hover {
+#headear, .destacadoHome, .linkActivo, #bajada, #imagenDestacado, .linkHome, .seleccionado, .linkNavegacion:hover, #accordion h3 {
 	background-color: #C8A3CC;
 }
 .linkNavegacion:hover a {
 	color: #F6F7F9;
 }
 
-#ejemplarActual h2, #ejemplarDestacado h1, .tituloSeccion, .accesoRecomendado h1, .tituloFranjaIzquierda, #accordion h3 {
+#ejemplarActual h2, #ejemplarDestacado h1, .tituloSeccion, .accesoRecomendado h1, .tituloFranjaIzquierda {
 	color: #C8A3CC;
 }
 #ejemplarActual h1 {
@@ -29,7 +29,7 @@
 * {
 	margin: 0;
 }
-a, a:link, a:visited, a:active {	
+a, a:link, a:visited, a:active {
 	text-decoration: none;
 }
 
@@ -91,14 +91,13 @@ html, body {
 	cursor: pointer;
 	font-family: "Oswald";
 	font-weight: 300;
-	text-align: center;	
+	text-align: center;
 	color: #000000;
 	cursor: pointer;
 }
 .largo {
 	width: 27% !important;
 }
-
 
 #cuerpoHome {
 	min-height: 80%;
@@ -110,7 +109,7 @@ html, body {
 #cuerpo {
 	min-height: 80%;
 	width: 80%;
-	background-color: #FFFFFF;	
+	background-color: #FFFFFF;
 	left: 10%;
 	position: absolute;
 }
@@ -118,6 +117,9 @@ html, body {
 	width: 60%;
 	min-height: 90%;
 	float: left;
+}
+#franjaIzquierda p {
+	margin: 10px;
 }
 
 #destacado {
@@ -144,13 +146,15 @@ html, body {
 	cursor: pointer;
 }
 #bajada h1, .tituloFranjaIzquierda {
-
 	font-family: "Oswald";
 	font-weight: 700;
-	margin: 0;
+}
+.tituloSeccion {
+	font-family: "Oswald";
+	font-weight: 700;
 }
 .tituloFranjaIzquierda {
-	width: 75%%;
+	width: 75%;
 }
 #bajada p {
 
@@ -161,7 +165,7 @@ html, body {
 #ejemplarActual, #franjaDerecha {
 	width: 30%;
 	min-height: 255px;
-	float: right;	
+	float: right;
 	margin: 0px 0px 0px 40px;
 }
 #ejemplarActual h1 {
@@ -175,7 +179,7 @@ html, body {
 	line-height: 1;
 	cursor: pointer;
 }
-.wrapperIndice{
+.wrapperIndice {
 	width: 50%;
 	float: left;
 }
@@ -228,6 +232,13 @@ html, body {
 	font-family: "Signika";
 	color: #3B3B3B;
 }
+.firma {
+	text-align: right;
+	font-style: italic;
+}
+.alineadoDerecha {
+	text-align: right;
+}
 
 #wrapperEjemplaresAnteriores {
 	display: block;
@@ -235,13 +246,13 @@ html, body {
 }
 
 .ejemplarAnterior {
-	width: 45%;
-	padding: 20px 2.5% 20px 2.5%;
+	width: 49%;
+	padding: 15px 0.5% 0px 0.5%;
 	float: left;
 }
 .ejemplarAnterior img {
-	width: 80%;
-	margin-left: 10%;
+	width: 95%;
+	margin-right: 5%;
 }
 .ejemplarAnterior p {
 	font-family: "Signika";
@@ -340,18 +351,28 @@ html, body {
 .texto a:hover {
 	font-weight: bold;
 }
-.azul{
+.azul {
 	color: #1111EE !important;
 }
-.linkArticulo,  .linkArticulo:link, .linkArticulo:visited, .linkArticulo:active{
+.linkArticulo, .linkArticulo:link, .linkArticulo:visited, .linkArticulo:active {
 	color: #1111EE;
 	font-style: italic;
 }
-.linkArticulo:hover{
+.linkArticulo:hover {
 	font-weight: bold;
 }
 
-@media screen and (max-height: 678px) {
+#accordion h3 {
+	font-family: "Oswald";
+	color: #F6F7F9;
+	width: 50%;
+}
+#accordion div {
+	font-family: "Oswald";
+	font-weight: 300;
+}
+
+@media screen and (max-height: 800px) {
 
 	#logoAfidi {
 		width: 100px;
@@ -391,6 +412,12 @@ html, body {
 	#ejemplarDestacado h1 {
 		font-size: 240%;
 	}
+	#franjaIzquierda p {
+		margin: 10px 0 10px 0;
+	}
+	#franjaIzquierda ul li {
+		margin: 10px 0 10px 10px;
+	}
 	.parrafoDestacado {
 		font-size: 130%;
 		padding: 10px 0px 20px 0px;
@@ -402,10 +429,10 @@ html, body {
 		padding-top: 5px;
 		font-size: 70%;
 	}
-	.tituloSeccion{
+	.tituloSeccion {
 		font-size: 240%;
 	}
-	
+
 	.accesoRecomendado h1 {
 		font-size: 240%;
 	}
@@ -418,18 +445,29 @@ html, body {
 	}
 	.aclaracion {
 		padding: 10px 3px 10px 0px;
-		font-size: 70%;
+		font-size: 14px;
 	}
 	.campoFormulario {
 		margin-bottom: 10px;
-		font-size: 70%;
+		font-size: 14px;
 	}
 	.campoFormulario input, .campoFormulario textarea {
 		padding: 0 0 0 5px;
 		font-size: 12px;
 	}
+	#accordion h3 {
+		font-size: 18px;
+		margin: 10px 0 10px 0;
+		padding: 18px 0 18px 2%;
+	}
+	.opcionesRestoDelMundo {
+		padding: 15px 0 30px 0;
+	}
+	.separadoAbajo {
+		padding: 0 0 30px 0;
+	}
 }
-@media screen and (min-height: 678px) {
+@media screen and (min-height: 800px) {
 	#logoAfidi {
 		width: 120px;
 	}
@@ -468,6 +506,12 @@ html, body {
 	#ejemplarDestacado h1 {
 		font-size: 62px;
 	}
+	#franjaIzquierda p {
+		margin: 17px 0 17px 0;
+	}
+	#franjaIzquierda ul li {
+		margin: 17px 0 17px 10px;
+	}
 	.parrafoDestacado {
 		font-size: 24px;
 		padding: 10px 0px 20px 0px;
@@ -475,12 +519,13 @@ html, body {
 	.textoGeneral {
 		font-size: 16px;
 	}
+
 	.ejemplarAnterior p {
 		padding-top: 5px;
 		font-size: 16px;
 	}
-	
-	.tituloSeccion{
+
+	.tituloSeccion {
 		font-size: 42px;
 	}
 	.accesoRecomendado h1 {
@@ -504,5 +549,16 @@ html, body {
 	.campoFormulario input, .campoFormulario textarea {
 		padding: 0 0 0 5px;
 		font-size: 24px;
+	}
+	#accordion h3 {
+		font-size: 27px;
+		margin: 15px 0 15px 0;
+		padding: 27px 0 27px 2%;
+	}
+	.opcionesRestoDelMundo {
+		padding: 23px 0 45px 0;
+	}
+	.separadoAbajo {
+		padding: 0 0 45px 0;
 	}
 }

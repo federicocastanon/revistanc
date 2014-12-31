@@ -13,8 +13,8 @@ $(document).ready(function() {
 		window.open("http://www.itineris.org.ar/", '_blank');
 	});
 	var a = window.location.toString();
-	var name = a.substring(a.indexOf(".") - 11);
-	if (name == 'suscripcion.html') {
+	var name = a.indexOf("suscripcion");
+	if (name > 0) {
 		$("#accordion").accordion({
 			active : false,
 			heightStyle : "content",
