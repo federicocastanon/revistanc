@@ -6,7 +6,7 @@
 		<link href='http://fonts.googleapis.com/css?family=Signika' rel='stylesheet' type='text/css'>
 		<link rel="shortcut icon" href="css/img/favicon.ico" />
 		<link rel="icon" type="image/ico" href="css/img/favicon.ico" />
-<link rel="stylesheet" type="text/css" media="screen" href="css/style.css"/>
+		<link rel="stylesheet" type="text/css" media="screen" href="css/style.css"/>
 		<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
 		<script type="text/javascript" src="js/script.js"></script>
 	</head>
@@ -24,7 +24,11 @@
 				<a href="ejemplares.html">
 				<div id="ejemplares" class="linkNavegacion" >
 					EJEMPLARES
-				</div> </a>				
+				</div> </a>
+				<a href="secciones.html">
+				<div id="secciones" class="linkNavegacion seleccionado"  >
+					SECCIONES
+				</div> </a>
 				<a href="publicar.html">
 				<div id="publicar" class="linkNavegacion">
 					PUBLICAR
@@ -34,48 +38,38 @@
 					SUSCRIPCIÓN
 				</div> </a>
 				<a href="contacto.html">
-				<div id="contacto" class="linkNavegacion seleccionado" >
+				<div id="contacto" class="linkNavegacion" >
 					CONTACTO
 				</div> </a>
 			</div>
 		</div>
 		<div id="cuerpo">
-			<div id="franjaIzquierda">
-				<h1 class="tituloFranjaIzquierda">CONTACTO:</h1>
-				<form class="formContacto" name="formu" id="formu" method="post" >
-					<div id="camposWrapper">
-						<div class="campoFormulario">
-							<label for="nombre" class="requerido">Nombre y Apellido</label>
-							<input id="nombre" type="text" tabindex="31">
-						</div>
-						<div class="campoFormulario">
-							<label for="organizacion">Organización</label>
-							<input id="organizacion" type="text" tabindex="32">
-						</div>
-						<div class="campoFormulario">
-							<label for="telefono">Teléfono</label>
-							<input id="telefono" type="text" tabindex="33">
-						</div>
-						<div class="campoFormulario">
-							<label for="mail" class="requerido">Correo electrónico</label>
-							<input id="mail" type="email" tabindex="34">
-						</div>
-						<div class="campoFormulario ">
-							<label for="consulta" class="requerido">Mensaje</label>
-							<textarea id="consulta" class="campoFormTextArea" name="consulta" cols="50" rows="3" tabindex="35" ></textarea>
-						</div>
-					</div>
-					<div class="aclaracion">
-						<span class="requerido">Los campos con </span><span> son datos imprescindibles para poder responderte</span>
-					</div>
-					<div class="botones">
-						<input type="button" value="Enviar" id="manda" name="manda" onclick="javascript:mandarMensaje();" class="btnEnviar" tabindex="36">
-						&nbsp;
-						<input type="reset" value="Borrar todo" class="btnEliminar" tabindex="37">
-					</div>
-				</form>
+			<div id="franjaIzquierda" class="textoGeneral">
+				<h1 class="tituloFranjaIzquierda">Secciones de la RNC.</h1>
+				<p>
+					<b>1 - Editorial:</b>
+				</p>
+				<p>
+					<b>2 - Autogestión:</b>
+				</p>
+				<p>
+					<b>3 -  Investigación y buenas prácticas: </b>
+				</p>
+				<p>
+					<b>4 - Políticas Públicas:</b>
+					<a class="azul" target="_blank" href="archivos/preguntasFuncionariosPublicos.pdf" >Descargue el cuestionario para funcionarios públicos haciendo click  aqui </a>
+				</p>
+
+				<p>
+					<b>5 - Transformadores:</b>
+					<a class="azul" target="_blank" href="archivos/preguntasTransformadores.pdf" >Descargue el cuestionario para transformadores haciendo click  aqui </a>
+				</p>
+				<p>
+					<b>6 - Cuarto espacio:</b>
+				</p>
 			</div>
-			<div id="franjaDerecha"> <a href="publicar.html">
+			<div id="franjaDerecha">
+				<a href="publicar.html">
 				<div class="accesoRecomendado">
 					<h1>PUBLICAR UN ARTICULO EN RNC</h1>
 					<p>
@@ -93,10 +87,9 @@
 				<div class="accesoRecomendado">
 					<h1>SUSCRIBIRSE A RNC DIGITAL O IMPRESA</h1>
 					<p>
-		Si desea recibir los ejemplares de la revista en su domicilio ahora puede solicitarlos individualmente o todos juntos en 3 simples pasos sin moverse de su casa
-					</p> 
-				</div>
-				</a>
+						Si desea recibir los ejemplares de la revista en su domicilio ahora puede solicitarlos individualmente o todos juntos en 3 simples pasos sin moverse de su casa
+					</p>
+				</div> </a>
 			</div>
 			<div id="footer">
 				<p id="copyright">
