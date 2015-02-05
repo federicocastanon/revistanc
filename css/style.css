@@ -10,6 +10,7 @@
  * */
 #headear, .destacadoHome, .linkActivo, #bajada, #imagenDestacado, .linkHome, .seleccionado, .linkNavegacion:hover, #accordion h3 {
 	background-color: #C8A3CC;
+	color: #FFFFFF !important;
 }
 .linkNavegacion:hover a {
 	color: #F6F7F9;
@@ -156,7 +157,7 @@ html, body {
 #bajada p {
 
 	font-family: "Signika";
-	color: #3B3B3B;
+	color: #FFFFFF;
 }
 
 #ejemplarActual, #franjaDerecha {
@@ -186,7 +187,7 @@ html, body {
 	color: #3B3B3B;
 }
 #wrapperLinkHome {
-	padding: 30px 5px 3px 0px;
+	padding: 2% 0 1% 0px;
 	width: 100%;
 	min-height: 110px;
 	float: left;
@@ -197,6 +198,7 @@ html, body {
 	font-family: "Oswald";
 	font-weight: 700;
 	cursor: pointer;
+	padding: 0 4% 0 4%;
 }
 .anunciar {
 	width: 40%;
@@ -205,6 +207,7 @@ html, body {
 .publicar {
 	width: 40%;
 	float: right;
+	padding-left: 4%;
 }
 
 #ejemplarDestacado {
@@ -363,6 +366,7 @@ html, body {
 	font-family: "Oswald";
 	color: #F6F7F9;
 	width: 50%;
+	cursor: pointer;
 }
 #accordion div {
 	font-family: "Oswald";
