@@ -482,6 +482,10 @@ html, body {
 	.separadoAbajo {
 		padding: 0 0 30px 0;
 	}
+	#formanio1, #formanio2{
+		float: left;
+		width: 100%;
+	}
 }
 @media screen and (min-height: 800px) {
 	#logoNC {
