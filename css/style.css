@@ -5,11 +5,12 @@
  * ejemplar 1 57BAD9
  * ejemplar 2 F7B32C
  * ejemplar 3 7DB52C
- * ejemplar 4 C7A2CB
+ * ejemplar 4 C8A3CC
+ * ejemplar 5 EC5C2D
  *
  * */
 #header, .destacadoHome, .linkActivo, #bajada, #imagenDestacado, .linkHome, .seleccionado, .linkNavegacion:hover, #accordion h3 {
-	background-color: #C8A3CC;
+	background-color: #EC5C2D;
 	color: #FFFFFF !important;
 }
 .linkNavegacion:hover a {
@@ -17,13 +18,13 @@
 }
 
 #ejemplarActual h2, #ejemplarDestacado h1, .tituloSeccion, .accesoRecomendado h1, .tituloFranjaIzquierda {
-	color: #C8A3CC;
+	color: #EC5C2D;
 }
 #ejemplarActual h1 {
-	border-bottom: #C8A3CC solid 2px;
+	border-bottom: #EC5C2D solid 2px;
 }
 #franjaDerecha, #franjaIzquierda {
-	border-top: #C8A3CC solid 3px;
+	border-top: #EC5C2D solid 3px;
 }
 /*CAMBIAR EN CADA IMPLEMENTACION*/
 
