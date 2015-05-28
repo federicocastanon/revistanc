@@ -67,7 +67,7 @@ html, body {
 	background-size: contain;
 	margin: 0.8%;
 	float: right;
-	cursor: pointer;
+	cursor: pointer;	
 }
 #logoItineris {
 	background: url(img/Itineris_blanco.png) no-repeat;
@@ -390,8 +390,10 @@ html, body {
 		width: 354px;
 	}
 	#logoAfidi {
-		width: 100px;
-		height: 48%;
+		/*width: 100px;
+		height: 48%;*/
+		height: 0;
+		width: 0;
 	}
 	#logoItineris {
 		width: 100px;
@@ -494,8 +496,11 @@ html, body {
 		min-width: 354px;
 	}
 	#logoAfidi {
-		width: 120px;
-		height: 40%;
+		/*width: 120px;
+		height: 40%;*/
+		
+		height: 0;
+		width: 0;
 	}
 	#logoItineris {
 		width: 140px;
